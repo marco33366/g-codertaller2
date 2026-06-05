@@ -70,8 +70,15 @@ Variables de entorno soportadas:
 - `ALGORITHM`
 - `ACCESS_TOKEN_EXPIRE_MINUTES`
 - `DATABASE_URL`
+- `FRONTEND_ORIGIN`
 
 El archivo `.env.example` documenta valores de referencia. Para desarrollo local, la base por defecto es SQLite en `storage/gcoder.db`.
+
+Configuracion CORS:
+
+- En local: `FRONTEND_ORIGIN=http://localhost:3000`
+- En Render: `FRONTEND_ORIGIN=https://g-codertaller2.vercel.app`
+- El valor debe ser solo el origen base. No incluir `/login`, rutas adicionales ni slash final.
 
 Crear o actualizar usuarios iniciales:
 
